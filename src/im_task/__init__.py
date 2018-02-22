@@ -15,8 +15,6 @@ def get_taskroute():
     global TASKUTILS_TASKROUTE
     return TASKUTILS_TASKROUTE
 
-def get_webapp_url():
-    return "%s/(.*)" % get_taskroute()
 
 def get_enqueue_url(suffix):
     return "%s/%s" % (get_taskroute(), suffix)
