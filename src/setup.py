@@ -8,7 +8,7 @@ except ImportError:
 
 dist = setup(
     name='im_task',
-    version='0.0.1dev1',
+    version='0.1.0',
     description='@task for Google App Engine, Python standard environment',
     author='Emlyn O\'Regan',
     author_email='emlynoregan@gmail.com',
