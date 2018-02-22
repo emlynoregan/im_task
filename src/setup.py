@@ -13,10 +13,10 @@ dist = setup(
     author='Emlyn O\'Regan',
     author_email='emlynoregan@gmail.com',
     url='https://github.com/emlynoregan/im_task',
-    license='LICENSE.txt',
+    license='../LICENSE.txt',
     packages=['im_task'],
     install_requires=['im_util', 'cloudpickle'],
-    long_description=open('README.md').read(),
+    long_description=open('../README.md').read(),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
