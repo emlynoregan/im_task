@@ -1,38 +1,33 @@
-# appenginetaskutils
-This is the repo for the appengine task utils library. It generates the appenginetaskutils package 
+# im_task
+This package contains the @task function, for decorating python functions to be appengine tasks.
  
 ## Install
 
-Use the python package for this library. You can find the package online [here](https://pypi.python.org/pypi/appenginetaskutils).
+Use the python package for this library. You can find the package online [here](https://pypi.org/project/im-task/).
 
 Change to your Python App Engine project's root folder and do the following:
 
-> pip install appenginetaskutils --target lib
+> pip install im_task --target lib
 
 Or add it to your requirements.txt. You'll also need to set up vendoring, see [app engine vendoring instructions here](https://cloud.google.com/appengine/docs/python/tools/using-libraries-python-27).
 
 ## @task
 
-The most basic element of the taskutils library is task(). This decorator function is designed to be used as a replacement for [deferred](https://cloud.google.com/appengine/articles/deferred).
+This decorator function is designed to be used as a replacement for [deferred](https://cloud.google.com/appengine/articles/deferred).
 
 ### Configuring @task
 
-When using deferred you have a builtin to configure in app.yaml to make it work. For taskutils.task, you need to add the following to your app.yaml and/or \<servicename\>.yaml file:
+This bit needs a rewrite. Note that this library doesn't provide utilities for frameworks (eg: flask, webapp2), for those you'll
+want the following packages:
 
-	handlers:
-		- url: /_ah/task/.*
-		  script: taskutils.app
-		  login: admin
-  
-This rule creates a generic handler for task to defer work to background push tasks.
-
-Add it at the top of the list (to make sure other rules don't override it).
+- im_task_flask
+- im_task_webapp2
 
 ### Importing task
 
 You can import task into your modules like this:
 
-	from taskutils import task
+	from im_task import task
 	
 ### Using task as a decorator
 
@@ -123,6 +118,6 @@ When using deferred, all your calls are logged as /_ah/queue/deferred. But @task
 which makes debugging a lot easier.
 
 
-
+##
 
  

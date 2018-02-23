@@ -8,14 +8,14 @@ except ImportError:
 
 dist = setup(
     name='im_task',
-    version='0.1.0',
+    version='0.1.1',
     description='@task for Google App Engine, Python standard environment',
     author='Emlyn O\'Regan',
     author_email='emlynoregan@gmail.com',
     url='https://github.com/emlynoregan/im_task',
     license='../LICENSE.txt',
     packages=['im_task'],
-    install_requires=['im_util', 'cloudpickle'],
+    install_requires=['im_util >= 0.1.4', 'cloudpickle'],
     long_description=open('../README.md').read(),
     classifiers=[
         'Development Status :: 3 - Alpha',
