@@ -1,5 +1,7 @@
 # im_task
 This package contains the @task function, for decorating python functions to be appengine tasks.
+
+[![Build Status](https://travis-ci.org/emlynoregan/im_task.svg?branch=master)](https://travis-ci.org/emlynoregan/im_task)
  
 ## Install
 
