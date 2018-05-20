@@ -5,25 +5,16 @@ This package contains the @task function, for decorating python functions to be 
  
 ## Install
 
-Use the python package for this library. You can find the package online [here](https://pypi.org/project/im-task/).
+Don't install this library directly; instead, you'll need to install one of the framework specific modules:
 
-Change to your Python App Engine project's root folder and do the following:
+[im_task_flask](https://github.com/emlynoregan/im_task_flask)
+[im_task_webapp2](https://github.com/emlynoregan/im_task_webapp2)
 
-> pip install im_task --target lib
-
-Or add it to your requirements.txt. You'll also need to set up vendoring, see [app engine vendoring instructions here](https://cloud.google.com/appengine/docs/python/tools/using-libraries-python-27).
+If you're using a different framework, and you'd like to use @task, let me know and I'll add support.
 
 ## @task
 
 This decorator function is designed to be used as a replacement for [deferred](https://cloud.google.com/appengine/articles/deferred).
-
-### Configuring @task
-
-This bit needs a rewrite. Note that this library doesn't provide utilities for frameworks (eg: flask, webapp2), for those you'll
-want the following packages:
-
-- im_task_flask
-- im_task_webapp2
 
 ### Importing task
 
