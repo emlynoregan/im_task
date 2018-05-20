@@ -7,8 +7,8 @@ This package contains the @task function, for decorating python functions to be 
 
 Don't install this library directly; instead, you'll need to install one of the framework specific modules:
 
-[im_task_flask](https://github.com/emlynoregan/im_task_flask)
-[im_task_webapp2](https://github.com/emlynoregan/im_task_webapp2)
+* [im_task_flask](https://github.com/emlynoregan/im_task_flask)
+* [im_task_webapp2](https://github.com/emlynoregan/im_task_webapp2)
 
 If you're using a different framework, and you'd like to use @task, let me know and I'll add support.
 
