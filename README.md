@@ -111,6 +111,15 @@ When using deferred, all your calls are logged as /_ah/queue/deferred. But @task
 which makes debugging a lot easier.
 
 
-##
+## Changing the default route
+@task will use the route "_ah/task" by default. This is what needs to be handled in app.yaml. There's more info in the framework specific modules about this (see links above).
+
+However, you may need to use a different route in some circumstances. If you do, you can just change the route like this:
+
+	from im_task import set_taskroute
+	
+	set_taskroute(<my new route>)
+	
+Call that function early in your main.py, before @task is actually used anywhere, and remember that your configured route in app.yaml must match whatever route you provide here.
 
  
