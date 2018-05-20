@@ -43,11 +43,11 @@ Your function can also have arguments, including other functions:
 	    @task
 	    def myinnerfunction(objects):
 	    	for object in objects:
-	    		mapf(object)
+	    	    mapf(object)
 	    		
 	    ...get some list of lists of objects... 
-		for objects in objectslist:
-			myinnerfunction(objects)
+	    for objects in objectslist:
+		myinnerfunction(objects)
 			
 	def dosomethingwithobject(object):
 		... do something with an object ...		
