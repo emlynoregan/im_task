@@ -2,6 +2,8 @@
 This package contains the @task function, for decorating python functions to be appengine tasks.
 
 [![Build Status](https://travis-ci.org/emlynoregan/im_task.svg?branch=master)](https://travis-ci.org/emlynoregan/im_task)
+
+This library is available as the package [im-task on pypi](https://pypi.org/project/im-task/).
  
 ## Install
 
@@ -34,7 +36,7 @@ Just call the function normally, eg:
  
 	myfunction()
 
-You can use @task on any function, including nested functions, recursive functions, recursive nested functions, the sky is the limit. This is possible because of use of [yccloudpickle](https://medium.com/the-infinite-machine/python-function-serialisation-with-yccloudpickle-b2ff6b2ad5da#.zei3n0ibu) as the underlying serialisation library.
+You can use @task on any function, including nested functions, recursive functions, recursive nested functions, the sky is the limit. This is possible because of use of [cloudpickle](https://github.com/cloudpipe/cloudpickle) as the underlying serialisation library.
 
 Your function can also have arguments, including other functions:
 
